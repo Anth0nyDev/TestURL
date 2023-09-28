@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #141414;
+    font-family: "Display", sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    width: 100%;
+    border-radius: 16px;
+}
+/* Шапка */
+header{
+    display: flex;
+    align-items: center;
+    gap: 128px;
+    justify-content: space-around;
+    padding: 0 20%;
+    height: 64px;
+    background-color: #111111;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+header .logo a{
+    font-size: 24px;
+}
+header nav{
+    display: flex;
+    gap: 32px;
+}
+/* Контент */
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+main .left_box{
+    width: 35%;
+    margin: 32px;
+}
+main .left_box .box_up{
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #1a1b1c;
+}
+main .left_box .box_down{
+    display: block;
+    text-align: center;
+    height: 350px;
+    padding: 24px 0;
+    margin-top: 32px;
+    border-radius: 16px;
+    background-color: #1a1b1c;
+}
+main .left_box .box_down table{
+    width: 100%;
+    margin-top: 16px;
+}
+main .left_box .play{
+    width: 60%;
+    margin: 16px auto;
+}
+main .right_box{
+    width: 65%;
+    margin: 32px;
+}
+main .right_box .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 64px;
+    margin: 24px 0;
+    background-color: #1a1b1c;
+    border-radius: 16px;
+}
+main .right_box .description{
+    height: 380px;
+    margin-top: 32px;
+    padding: 32px;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: #1a1b1c;
+}
+main .right_box .create_feedback{
+    margin-top: 32px;
+    padding: 24px;
+    height: 192px;
+    border-radius: 16px;
+    background-color: #1a1b1c;
+}
+main .right_box .create_feedback textarea{
+    resize: none;
+    width: 100%;
+    border: none;
+    background-color: #cccccc;
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+main .right_box .create_feedback textarea:focus{
+    outline: none;
+}
+main .right_box .create_feedback .btn{
+    float: right;
+    width: 96px;
+    height: 24px;
+    margin: 6px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 6px;
+}
+main .right_box .feedback_list_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 64px;
+    margin: 32px 0;
+    background-color: #1a1b1c;
+    border-radius: 16px;
+}
+main .right_box .feedback_list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 128px;
+    padding: 24px;
+    margin-top: 32px;
+    background-color: #1a1b1c;
+    border-radius: 16px;
+}
+/* Подключить шрифт */
+@font-face {
+    font-family: "Display";
+    src: url("./fonts/Display.ttf");
+}
